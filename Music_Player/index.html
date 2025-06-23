@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" /> 
+    <link rel="stylesheet" href="style.css">
+    <title>Music_Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="song_info">
+            <div class="artist_name"></div>
+            <div class="song_name"></div>
+            <div class="progress_bar">
+                <div class="fill_bar"></div>
+            </div>
+            <div class="time">0:00 - 0:00</div>
+        </div>
+        <div class="disk">
+            <div class="circle"></div>
+            <div id="cover" class="cover"></div>
+        </div>
+        <div class="controls">
+            <i id="mute" class="mute_btn fa-solid fa-volume-xmark"></i>
+            <i id="prev" class="prev_btn fa-solid fa-backward"></i>
+            <i id="play" class="play_btn fa-solid fa-play"></i>
+            <i id="next" class="next_btn fa-solid fa-forward"></i>
+            <div class="volume-group">
+              <i id="high" class="high_btn fa-solid fa-volume-high"></i>
+              <input type="range" id="volume" min="0" max="1" step="0.01" value="1" style="display:none;">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
